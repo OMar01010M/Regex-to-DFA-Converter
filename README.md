@@ -17,3 +17,68 @@ To run the script, simply execute:
 
 ```bash
 python main.py
+
+Example
+For the regex:
+
+plaintext
+Copy
+Edit
+a(b|c)*
+The script generates the following DFA:
+
+plaintext
+Copy
+Edit
+DFA:
+States: {0, 1, 2, 3}
+Alphabet: {'a', 'b', 'c'}
+Start State: 0
+Accepting States: {3}
+Transitions:
+  0 --a--> 1
+  1 --b--> 2
+  1 --c--> 2
+  2 --b--> 2
+  2 --c--> 2
+  2 --ε--> 3
+Features
+Converts a regex into an NFA.
+
+Transforms the NFA into a DFA.
+
+Supports basic regex operators:
+
+| (OR)
+
+* (Kleene star)
+
+Concatenation.
+
+Future Improvements
+Support for + (one or more occurrences) and ? (optional).
+
+Optimize DFA by minimizing states.
+
+Add graphical visualization.
+
+License
+This project is open-source and available under the MIT License.
+
+Author
+[Your Name]
+
+yaml
+Copy
+Edit
+
+---
+
+📌 **Copy and paste this into a file named `README.md` in your GitHub repository.** Let me know if you want any modifications! 😊
+
+
+
+
+
+
+
