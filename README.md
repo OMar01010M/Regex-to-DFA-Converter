@@ -20,16 +20,9 @@ python main.py
 
 Example
 For the regex:
-
-plaintext
-Copy
-Edit
 a(b|c)*
-The script generates the following DFA:
 
-plaintext
-Copy
-Edit
+The script generates the following DFA:
 DFA:
 States: {0, 1, 2, 3}
 Alphabet: {'a', 'b', 'c'}
@@ -42,39 +35,35 @@ Transitions:
   2 --b--> 2
   2 --c--> 2
   2 --ε--> 3
-Features
-Converts a regex into an NFA.
 
-Transforms the NFA into a DFA.
+Features:
+- Converts a regex into an NFA.
 
-Supports basic regex operators:
+- Transforms the NFA into a DFA.
 
-| (OR)
+- Supports basic regex operators:
 
-* (Kleene star)
+1. | (OR)
 
-Concatenation.
+2. * (Kleene star)
 
-Future Improvements
-Support for + (one or more occurrences) and ? (optional).
+3. Concatenation.
 
-Optimize DFA by minimizing states.
+Future Improvements:
 
-Add graphical visualization.
+- Support for + (one or more occurrences) and ? (optional).
+
+- Optimize DFA by minimizing states.
+
+- Add graphical visualization.
 
 License
 This project is open-source and available under the MIT License.
 
 Author
-[Your Name]
+OMar Mo
 
-yaml
-Copy
-Edit
 
----
-
-📌 **Copy and paste this into a file named `README.md` in your GitHub repository.** Let me know if you want any modifications! 😊
 
 
 
