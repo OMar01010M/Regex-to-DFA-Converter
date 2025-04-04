@@ -1,27 +1,19 @@
-# Regex-to-DFA-Converter
-This project implements a complete pipeline for converting regular expressions to Deterministic Finite Automata (DFA) in Python. The conversion follows these steps:
-1.Parse the regular expression (regex) 
-2.Convert to Non-deterministic Finite Automaton (NFA) using Thompson's Construction 
-3.Transform NFA to DFA using Subset Construction
+# Regex to DFA Converter
 
-##Features
-1.Supports basic regex operations:
+This project converts a given regular expression (Regex) into a Non-deterministic Finite Automaton (NFA) and then transforms the NFA into a Deterministic Finite Automaton (DFA). The implementation is done in Python.
 
--Concatenation (ab)
+## Features
 
--Alternation (a|b)
+- **Regular Expression Parsing**: Parses basic regular expressions including concatenation, alternation (`|`), and Kleene star (`*`).
+- **NFA Construction**: Constructs an NFA from the parsed regex.
+- **NFA to DFA Conversion**: Converts the NFA into a DFA using the subset construction algorithm.
+- **Epsilon Closures**: Computes epsilon closures to handle ε-transitions in the NFA.
+- **Graph Representation**: Stores DFA states and transitions in a dictionary format.
 
--Kleene star (a*)
+## Usage
 
--Parentheses for grouping ((ab)*)
+### Running the Script
+To run the script, simply execute:
 
--Escape sequences (\* for literal '*')
-
-2.Detailed error reporting for invalid regex patterns
-
-3.Clear visualization of the resulting DFA
-
-##Installation
-No external dependencies required. Just ensure you have Python 3.6+ installed.
- ```bash
-git clone https://github.com/yourusername/regex-to-dfa.git
+```bash
+python main.py
